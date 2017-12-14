@@ -3,18 +3,18 @@
 how to find opcodes 4 dummies
 by beng
 
-### INSTRUCTIONS
+# INSTRUCTIONS
 
 inside you should see two folders named "bin" and "node_modules". the placement of the modules inside is important.
 open up the "bin" folder and you should see a "node_modules" folder inside. open up that folder and you should see two folders named "alex-logger" and "alex-packet-id-finder".
 both "alex-logger" and "alex-packet-id-finder" go into your tera-proxy / bin / node_modules folder, where you put all of your other modules.
 
-go back to where you see the "INSTRUCTIONS" file and open the "node_modules" folder. you should see a folder called "hexy". this is a dependency (you need it for "alex-logger" and "alex-packet-id-finder" to work).
+go back to where you see the "README" file and open the "node_modules" folder. you should see a folder called "hexy". this is a dependency (you need it for "alex-logger" and "alex-packet-id-finder" to work).
 put this folder into your tera-proxy / node_modules folder **NOT YOUR BIN / NODE_MODULES FOLDER**. it should be placed in the same folder as where you find the "tera-data" folder.
 
 once you have installed both modules and the dependency, you are ready to begin find opcodes.
 
-### COMMANDS FOR LOGGING
+# COMMANDS FOR LOGGING
 
 there are only three commands you need to be concerned with for logging packets.
 
@@ -26,10 +26,10 @@ commands used for "alex-logger" will display the opcode for the packet enclosed 
 "fpi PACKET_NAME": this is the command for "alex-packet-id-finder". after enabling this command, you have to find some way to proc the packet you are trying to log.
 for example, if you are trying to log "C_PLAYER_LOCATION", you'd type "fpi C_PLAYER_LOCATION". to proc the packet, you would have to move around.
 
-##IMPORTANT##
+### IMPORTANT
 it has come to our attention that "alex-packet-id-finder" may not be reliable or may not be working correctly (i.e, not logging packets when it should).
 
-### AFTER YOU HAVE FOUND THE OPCODE
+# AFTER YOU HAVE FOUND THE OPCODE
 
 after you have found the opcode you are looking for, you need to go to tera-proxy / node_modules / tera_data / "map" folder. this is the folder where all your opcodes are found.
 open up your respective protocol.xxxxx.map folder that corresponds to your region. the list is as follows:
