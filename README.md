@@ -19,11 +19,13 @@ once you have installed both modules and the dependency, you are ready to begin 
 there are only three commands you need to be concerned with for logging packets.
 
 "logc": this is a command for "alex-logger". it logs all client -> server packets (or packets starting with C_). type "logc" again to turn it off.
+
 "logs": this is the other command for "alex-logger". it logs all server -> client packets (or packets starting with S_). type "logs" again to turn it off.
 
 commands used for "alex-logger" will display the opcode for the packet enclosed in parentheses. it will always look like (id xxxxx).
 
 "fpi PACKET_NAME": this is the command for "alex-packet-id-finder". after enabling this command, you have to find some way to proc the packet you are trying to log.
+
 for example, if you are trying to log "C_PLAYER_LOCATION", you'd type "fpi C_PLAYER_LOCATION". to proc the packet, you would have to move around.
 
 ### IMPORTANT
@@ -35,11 +37,17 @@ after you have found the opcode you are looking for, you need to go to tera-prox
 open up your respective protocol.xxxxx.map folder that corresponds to your region. the list is as follows:
 
 protocol.324670.map = NA
+
 protocol.324671.map = EU
+
 protocol.324672.map = RU
+
 protocol.324674.map = JP
+
 protocol.323464.map = KR-PTR
+
 protocol.323767.map = KR
+
 protocol.323311.map = TW
 
 once you have opened up your respective region's opcode map, insert the PACKET_NAME anywhere (doesn't have to be in alphabetical order) and then put the opcode after it.
