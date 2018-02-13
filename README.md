@@ -34,21 +34,10 @@ it has come to our attention that "alex-packet-id-finder" may not be reliable or
 # AFTER YOU HAVE FOUND THE OPCODE
 
 after you have found the opcode you are looking for, you need to go to tera-proxy / node_modules / tera_data / "map" folder. this is the folder where all your opcodes are found.
-open up your respective protocol.xxxxx.map folder that corresponds to your region. the list is as follows:
+open up your respective protocol.xxxxx.map folder that corresponds to your region. hit up my boi caali for the list:
+https://github.com/hackerman-caali/tera-data/blob/master/mappings.json 
 
-protocol.324670.map = NA
 
-protocol.324671.map = EU
-
-protocol.324672.map = RU
-
-protocol.324674.map = JP
-
-protocol.323464.map = KR-PTR
-
-protocol.323767.map = KR
-
-protocol.323311.map = TW
 
 once you have opened up your respective region's opcode map, insert the PACKET_NAME anywhere (doesn't have to be in alphabetical order) and then put the opcode after it.
 for example,
